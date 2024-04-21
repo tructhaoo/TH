@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THỰC HÀNH JQUERY</title>
+    <link rel="stylesheet" href="jquery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- ỨNG DỤNG -->
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide();
+                });
+                $("#show").click(function(){
+                    $("p").show();
+                });
+            });
+        </script>
+        <!-- SỰ KIỆN 1 -->
+        <script>
+            $(document).ready(function(){
+                $("#p1").hover(function(){
+                    alert("Bạn đã di chuyển chuột vào");
+                },
+                function(){
+                    alert("Vui lòng điền thông tin vào ô bên dưới!");
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("background-color", "pink");
+                });
+                $("input").blur(function(){
+                    $(this).css("background-color", "aquamarine");
+                });
+            });
+        </script>
+        <!-- SỰ KIỆN 2 -->
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").toggle("slow");
+            });
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").slideUp("slow");
+                });
+            });
+        </script>
+    <!-- HIỆU ỨNG -->
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("h1, h2").addClass("style1");
+                    $("p").addClass("style2");
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('#menu li').hover(function(){
+                    $(this).find('ul').toggle();
+                });
+      });
+        </script>
+      
+</head>
+<body>
+    <div class="bai1">
+        <p class="h2">BỘ CÔNG THƯƠNG</p>
+        <p class="h1">ĐẠI HỌC CÔNG NGHIỆP TP. HỒ CHÍ MINH</p>
+        <p class="h3">Đổi mới tư duy, làm giàu thêm tri thức - đời sống</p>
+        <button id="hide">Ẩn</button>
+        <button id="show">Hiện</button>  
+    </div>
+    <div class="bai2">
+        <h3 id="p1">Điền thông tin</h3>
+        Name: <input type="text" name="fullname"><br>
+        Email: <input type="text" name="email">  
+    </div>
+    <div class="bai3">
+        <div id="flip">KHOA THƯƠNG MẠI & DU LỊCH</div>
+        <div id="panel">Tuổi trẻ Khoa Thương mại và Du lịch - IUH <br> "Học tập tích cực - Đổi mới sáng tạo" </div>    
+    </div>
+    <div class="bai4">
+        <h2>BỘ CÔNG THƯƠNG</h2>
+        <h1>ĐẠI HỌC CÔNG NGHIỆP TP. HỒ CHÍ MINH</h1>
+        <p>Đổi mới tư duy, làm giàu thêm tri thức - đời sống</p>
+        <button>CHUYỂN ĐỔI</button>
+    </div>
+    <div class="bai5">
+        <nav class="menu">
+            <ul>
+              <li class="active"><a href="">Trang chủ</a></li>
+                                <li class="dropdown">
+                                    <a href="">Đào tạo</a>
+                                    <div class="dropdown-content">
+                                        <a href="">Đồ họa</a>
+                                        <a href="">Web</a>
+                                        <a href="">Mạng</a>
+                                    </div>
+                                <li><a href="">Dịch vụ</a></li>
+                                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

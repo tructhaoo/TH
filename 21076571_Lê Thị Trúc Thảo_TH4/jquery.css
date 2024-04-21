@@ -1,0 +1,216 @@
+body{
+    text-align: center;
+}
+.bai1{
+    font-family: "Helvetica Neue Condensed Black", Helvetica, Arial, sans-serif;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+.bai1 .h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #2f3ca4;
+    text-shadow: 1px 2px 3px #848484;
+}
+.bai1 .h2{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: #2f3ca4;
+    text-shadow: 1px 2px 2px #848484;
+}
+.bai1 .h3{
+    margin-top: 5px;
+    color: rgb(222, 14, 14);
+    font-size: 20px;
+}
+
+#hide, #show{
+    background-color: #53b3df;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    font-size:16px;  
+    
+}
+#hide:hover, #show:hover{
+    background-color: #3c7d9c;
+}
+.bai2{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+h2{
+    margin-top: 0;
+}
+.bai2 input{
+    font-size: 13px;
+    border: #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding:10px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+.bai3{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+#panel, #flip {
+    padding: 20px;
+    text-align: center;
+    background-color: #FDF5E6;
+    border: solid 1px #c3c3c3;
+    font-size:20px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+#flip {
+    font-weight: bold;
+    color:#13133e;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#panel {
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:#2a2e54d0;
+}
+.bai4{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+.style1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #2f3ca4;
+    text-shadow: 1px 2px 3px #848484;
+    font-family: "Helvetica Neue Condensed Black", Helvetica, Arial, sans-serif;
+
+}
+.style2{
+    margin-top: 5px;
+    color: rgb(222, 14, 14);
+    font-size: 20px;  
+    font-family: "Helvetica Neue Condensed Black", Helvetica, Arial, sans-serif;
+
+}
+.bai4 button{
+    background-color: #53b3df;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;   
+    
+
+}
+.bai5{
+    margin-top: 50px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+.menu {
+    background-color: #FDF5E6;
+    overflow: hidden;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    font-size:20px;
+    padding: 0;
+  }
+  
+  .menu li {
+    float: left;
+    padding: 15px 30px;
+    margin: 0 10px;
+  }
+  
+  .menu li:hover {
+    background-color: 0;
+  }
+  
+  .menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    color: #D3D3D3;
+  }
+ 
+#toggle {
+    display: none;
+    background: 0;
+    color: #000000;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}   
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #aba9a3;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color:#000000;
+}
+
